@@ -33,7 +33,8 @@ const Navbar = () => {
             <Link href="/">
               <p className="text-3xl font-bold">Empire</p>
             </Link>
-            <div>
+
+            <div className="flex gap-6">
               <div className="max-lg:hidden">
                 <Input
                   style={{ width: 350, borderRadius: 10 }}
@@ -43,62 +44,55 @@ const Navbar = () => {
                 />
               </div>
               <div className="lg:hidden">
-                <div>
-                  <Button onClick={() => setVisible2(true)} type="text">
-                    <IconSearch fontSize="22px" className=" text-gray-600" />
-                  </Button>
-                  <Modal
-                    title="Please Enter something"
-                    visible={visible2}
-                    onOk={() => setVisible2(false)}
-                    onCancel={() => setVisible2(false)}
-                    autoFocus={false}
-                    focusLock={true}
-                  >
-                    <div>
-                      <Input
-                        style={{ width: "100%", borderRadius: 10 }}
-                        allowClear
-                        placeholder="Please Enter something"
-                        size="large"
-                      />
-                    </div>
-                  </Modal>
-                </div>
+                <Button onClick={() => setVisible2(true)} type="text">
+                  <IconSearch fontSize="22px" className=" text-gray-600" />
+                </Button>
+                <Modal
+                  title="Please Enter something"
+                  visible={visible2}
+                  onOk={() => setVisible2(false)}
+                  onCancel={() => setVisible2(false)}
+                  autoFocus={false}
+                  focusLock={true}
+                  className="w-[90%]"
+                >
+                  <Input
+                    style={{ width: "100%", borderRadius: 10 }}
+                    allowClear
+                    placeholder="Please Enter something"
+                    size="large"
+                  />
+                </Modal>
+              </div>
+              <div className=" max-lg:hidden flex justify-center gap-6 items-center">
+                <Link
+                  className={`link ${pathname === "/" ? "active" : ""}`}
+                  href="/"
+                >
+                  Home
+                </Link>
+                <Link
+                  className={`link ${pathname === "/about" ? "active" : ""}`}
+                  href="/about"
+                >
+                  About
+                </Link>
+
+                <Link
+                  className={`link ${pathname === "/gallery" ? "active" : ""}`}
+                  href="/gallery"
+                >
+                  Gallery
+                </Link>
+                <Link
+                  className={`link ${pathname === "/contact" ? "active" : ""}`}
+                  href="/contact"
+                >
+                  Contact
+                </Link>
               </div>
             </div>
-            <div className=" max-lg:hidden flex justify-center gap-6 items-center">
-              <Link
-                className={`link ${pathname === "/" ? "active" : ""}`}
-                href="/"
-              >
-                Home
-              </Link>
-              <Link
-                className={`link ${pathname === "/about" ? "active" : ""}`}
-                href="/about"
-              >
-                About
-              </Link>
-              {/* <Link
-              className={`link ${pathname === "/collection" ? "active" : ""}`}
-              href="/collection"
-            >
-              Collection
-            </Link> */}
-              <Link
-                className={`link ${pathname === "/gallery" ? "active" : ""}`}
-                href="/gallery"
-              >
-                Gallery
-              </Link>
-              <Link
-                className={`link ${pathname === "/contact" ? "active" : ""}`}
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </div>
+
             <div className="lg:hidden">
               <div>
                 <Button

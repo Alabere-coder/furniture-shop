@@ -31,3 +31,40 @@ body {
     text-wrap: balance;
   }
 }
+
+.active {
+  border-bottom: 2px solid blue;
+  
+}
+
+
+.animate {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.line {
+  position: absolute;
+  bottom: 10px;
+  width: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: white; /* Color of the line */
+  animation: animateLine 4s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes animateLine {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 50%;
+    width: 50%;
+  }
+  100% {
+    left: 0;
+    width: 0;
+  }
+}
