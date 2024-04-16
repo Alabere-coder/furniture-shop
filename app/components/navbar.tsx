@@ -14,6 +14,7 @@ import {
 } from "@arco-design/web-react";
 import { IconMenu, IconSearch } from "@arco-design/web-react/icon";
 import enUS from "@arco-design/web-react/es/locale/en-US";
+import ScreenLinks from "./screenLinks";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -22,6 +23,9 @@ const Navbar = () => {
   return (
     <ConfigProvider locale={enUS}>
       <div className="flex flex-col relative">
+        <div className="fixed -right-32 top-[420px] z-20">
+          <ScreenLinks />
+        </div>
         <div className="flex items-center justify-center h-12 bg-blue-200 cursor-pointer hover:bg-blue-400 opacity-65">
           <p className=" text-xs max-sm:text-[11px] font-bold text-center ">
             Some product prices may be outdated, please confirm current price
