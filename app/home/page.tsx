@@ -47,6 +47,7 @@ const Header = () => {
             Select From Our Furnished Store
           </p>
         </div>
+
         <div className="absolute z-10 bottom-16 left-8 max-lg:left-6 text-white flex items-center gap-4">
           <Link href="/" className="">
             <FaFacebookF size="20" />
