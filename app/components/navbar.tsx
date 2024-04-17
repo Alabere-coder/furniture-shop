@@ -161,7 +161,9 @@ const Navbar = () => {
               }
               position="bottom"
             >
-              <Button type="text">Living-Room</Button>
+              <Button type="text" style={{ color: "black" }}>
+                Living-Room
+              </Button>
             </Dropdown>
 
             <Link href="/gallery/office" className=" font-medium">
