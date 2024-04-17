@@ -77,14 +77,14 @@ const Navbar = () => {
                 </Link>
                 <Link
                   className={`link ${pathname === "/about" ? "active" : ""}`}
-                  href="/pages/about"
+                  href="/about"
                 >
                   About
                 </Link>
 
                 <Link
                   className={`link ${pathname === "/gallery" ? "active" : ""}`}
-                  href="/pages/gallery"
+                  href="/gallery"
                 >
                   Gallery
                 </Link>
