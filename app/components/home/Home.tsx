@@ -1,6 +1,6 @@
 import React from "react";
 import bg1 from "../../public/home1.jpg";
-import bg2 from "../../public/bed1.jpg";
+import bg2 from "../../../public/bed1.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";

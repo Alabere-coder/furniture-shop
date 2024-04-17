@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Header from "./home/page";
-import ShowCase from "./home/ShowCase";
-import FeaturedCategory from "./home/FeaturedCat";
+import Header from "./components/home/Home";
+import ShowCase from "./components/home/ShowCase";
+import FeaturedCategory from "./components/home/FeaturedCat";
 import Faq from "./components/faq";
 
 export default function Home() {

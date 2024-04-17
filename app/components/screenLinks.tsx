@@ -9,7 +9,7 @@ import {
 
 const ScreenLinks = () => {
   return (
-    <div className="flex gap-6 rotate-90 text-white">
+    <div className="flex gap-6 rotate-90 max-lg:hidden text-black justify-center items-center">
       <p>Follow Us</p>
       <FaArrowRight />
       <div className="flex text-[16px] gap-1 items-center">

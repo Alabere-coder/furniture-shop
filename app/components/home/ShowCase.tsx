@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import image1 from "../../public/bed2.jpg";
-import image2 from "../../public/sofa9.jpg";
-import image3 from "../../public/drawer3a.webp";
-import image4 from "../../public/wardrobe1.webp";
-import image5 from "../../public/img-grid-3.jpg";
+import image1 from "../../../public/bed2.jpg";
+import image2 from "../../../public/sofa9.jpg";
+import image3 from "../../../public/drawer3a.webp";
+import image4 from "../../../public/wardrobe1.webp";
+import image5 from "../../../public/img-grid-3.jpg";
 import Image from "next/image";
 
 const ShowCase = () => {
